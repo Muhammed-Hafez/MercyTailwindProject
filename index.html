@@ -25,62 +25,68 @@
     <script src="assets/js/main.js" defer></script>
   </head>
   <body class="font-body">
-    <header class="bg-white py-10 md:mb-10">
-      <section
-        class="container max-w-screen-xl mx-auto px-6 flex-wrap lg:flex items-center"
-      >
-        <div class="flex justify-between items-center mb-10 lg:mb-0">
+    <header class="bg-white py-10 md:mb-10 container max-w-screen-xl mx-auto px-6">
+      <div>
+        <img src="assets/img/navbar-logo.png" alt="Logo" />
+      </div>
+
+        <nav
+          id="mobile-menu"
+          class="hidden lg:flex flex-col font-semibold lg:flex-row lg:flex-wrap lg:items-center"
+          aria-label="main"
+        >
+        <div class="flex items-center mb-10 lg:mb-0">
           <img src="assets/img/navbar-logo.png" alt="Logo" />
-          <div>
+          
           <button
             id="hum-button"
             class="lg:hidden text-3xl w-10 h-10 ml-auto flex items-center justify-center border border-blue-500 text-blue-500 rounded-md"
           >
             &#9776;
           </button>
-        </div>
+        
       </div>
-        <nav
-          id="mobile-menu"
-          class="hidden lg:flex flex-col gap-5 font-semibold lg:flex-row lg:items-center lg:mx-auto lg:space-x-4 xl:space-x-10"
-          aria-label="main"
-        >
+          <ul class="lg:flex flex-col lg:flex-row lg:items-center lg:mx-auto gap-8" >
+          <li>
+            <a
+            class="hover:text-gray-400 transition ease-in-out duration-300"
+            href="#"
+            >Home</a>
+          </li>
+          <li>
           <a
             class="hover:text-gray-400 transition ease-in-out duration-300"
             href="#"
-            >Home</a
-          >
+            >Charities</a>
+          </li>
+          <li>
           <a
             class="hover:text-gray-400 transition ease-in-out duration-300"
             href="#"
-            >Charities</a
-          >
+            >Membership</a>
+          </li>
+          <li>
           <a
             class="hover:text-gray-400 transition ease-in-out duration-300"
             href="#"
-            >Membership</a
-          >
-          <a
-            class="hover:text-gray-400 transition ease-in-out duration-300"
-            href="#"
-            >About us</a
-          >
-          <div class="py-4 flex flex-col text-center md:flex-col md:gap-4 lg:flex-row lg:items-center lg:mx-auto lg:space-x-4 xl:space-x-10">
+            >About us</a>
+          </li>
+          </ul>
+          <div class="py-4 flex flex-col text-center md:flex-col md:gap-4 lg:flex-row lg:items-center">
             <a
               href="#"
               class="px-6 py-4 bg-blue-500 text-white font-semibold text-lg rounded-xl hover:bg-blue-700 transition ease-in-out duration-500 mb-5 md:mb-0"
-              >Join</a
-            >
-
+              >Join</a>
             <a
               href="#"
               class="px-6 py-4 border-2 border-blue-500 text-blue-500 font-semibold text-lg rounded-xl hover:bg-blue-700 hover:text-white transition ease-linear duration-500"
-              >Become a member</a
-            >
+              >Become a member</a>
           </div>
         </div>
         </nav>
-
+      
+    </header>
+      <section class="">
         <div class="flex flex-col lg:flex-row justify-between space-x-20">
           <div class="text-center lg:text-left mt-40">
             <h1 class="text-3xl font-semibold md:text-6xl leading-normal mb-6">
@@ -104,7 +110,7 @@
           </div>
         </div>
       </section>
-    </header>
+
     <section class="bg-white py-16 md:mt-10">
       <div class="container max-w-screen-xl mx-auto px-4">
         <p
