@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mercy - Tailwind Template</title>
+    <link rel="stylesheet" href="assets/css/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.min.js"
+      integrity="sha512-7x3zila4t2qNycrtZ31HO0NnJr8kg2VI67YLoRSyi9hGhRN66FHYWr7Axa9Y1J9tGYHVBPqIjSE1ogHrJTz51g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="assets/js/main.js" defer></script>
+  </head>
+  <body class="font-body">
+    <header class="bg-white py-10 md:mb-10">
+      <section
+        class="container max-w-screen-xl mx-auto px-6 flex-wrap lg:flex items-center"
+      >
+        <div class="flex justify-between items-center mb-10 lg:mb-0">
+          <img src="assets/img/navbar-logo.png" alt="Logo" />
+          <div>
+          <button
+            id="hum-button"
+            class="lg:hidden text-3xl w-10 h-10 ml-auto flex items-center justify-center border border-blue-500 text-blue-500 rounded-md"
+          >
+            &#9776;
+          </button>
+        </div>
+      </div>
+        <nav
+          id="mobile-menu"
+          class="hidden lg:flex flex-col gap-5 font-semibold lg:flex-row lg:items-center lg:mx-auto lg:space-x-4 xl:space-x-10"
+          aria-label="main"
+        >
+          <a
+            class="hover:text-gray-400 transition ease-in-out duration-300"
+            href="#"
+            >Home</a
+          >
+          <a
+            class="hover:text-gray-400 transition ease-in-out duration-300"
+            href="#"
+            >Charities</a
+          >
+          <a
+            class="hover:text-gray-400 transition ease-in-out duration-300"
+            href="#"
+            >Membership</a
+          >
+          <a
+            class="hover:text-gray-400 transition ease-in-out duration-300"
+            href="#"
+            >About us</a
+          >
+          <div class="py-4 flex flex-col text-center md:flex-col md:gap-4 lg:flex-row lg:items-center lg:mx-auto lg:space-x-4 xl:space-x-10">
+            <a
+              href="#"
+              class="px-6 py-4 bg-blue-500 text-white font-semibold text-lg rounded-xl hover:bg-blue-700 transition ease-in-out duration-500 mb-5 md:mb-0"
+              >Join</a
+            >
+
+            <a
+              href="#"
+              class="px-6 py-4 border-2 border-blue-500 text-blue-500 font-semibold text-lg rounded-xl hover:bg-blue-700 hover:text-white transition ease-linear duration-500"
+              >Become a member</a
+            >
+          </div>
+        </div>
+        </nav>
+
+        <div class="flex flex-col lg:flex-row justify-between space-x-20">
+          <div class="text-center lg:text-left mt-40">
+            <h1 class="text-3xl font-semibold md:text-6xl leading-normal mb-6">
+              Charity for the <br class="hidden lg:block" />
+              world better life
+            </h1>
+            <p
+              class="text-gray-400 font-light text-base md:text-lg leading-normal mb-12"
+            >
+              We provide a trusted donation channel for peoples of<br />
+              worldwide to support people and organizers
+            </p>
+            <button
+              class="text-lg text-gray-300 lg:bg-blue-700 font-semibold hover:bg-blue-700 px-4 py-6 rounded-xl transition ease-in-out duration-500"
+            >
+              Get Started
+            </button>
+          </div>
+          <div class="mt-12">
+            <img src="assets/img/home-img.png" alt="Image" />
+          </div>
+        </div>
+      </section>
+    </header>
+    <section class="bg-white py-16 md:mt-10">
+      <div class="container max-w-screen-xl mx-auto px-4">
+        <p
+          class="font-light text-gray-500 text-lg md:text-xl text-center uppercase mb-6"
+        >
+          OUR FEATURES
+        </p>
+        <h1
+          class="text-2xl md:text-4xl text-gray-900 text-center font-semibold leading-normal mb-10"
+        >
+          We belive we can save <br />
+          more life with you
+        </h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20">
+          <div class="text-center">
+            <div class="flex justify-center mb-6">
+              <div
+                class="w-20 py-6 bg-blue-300 bg-opacity-30 text-blue-600 text-3xl rounded-xl"
+              >
+                <i class="fa fa-globe"></i>
+              </div>
+            </div>
+            <h3 class="font-semibold text-xl md:text-3xl text-gray-900 mb-4">
+              Transparent
+            </h3>
+            <p class="text-gray-500 lg:text-sm md:text-3xl mb-4">
+              Donations and distributions can be seen transparently
+            </p>
+            <div class="flex justify-center">
+              <a
+                href="#"
+                class="flex items-center gap-5 text-blue-700 text-2xl md:text3xl py-4 px-6 font-semibold hover:text-white hover:bg-blue-600 rounded-xl transition ease-in-out duration-500"
+              >
+                Learn more >
+              </a>
+            </div>
+          </div>
+          <div class="text-center">
+            <div class="flex justify-center mb-6">
+              <div
+                class="w-20 py-6 bg-blue-300 bg-opacity-30 text-blue-600 text-3xl rounded-xl"
+              >
+                <i class="fa fa-external-link"></i>
+              </div>
+            </div>
+            <h3 class="font-semibold text-xl md:text-3xl text-gray-900 mb-4">
+              Quick Fundraise
+            </h3>
+            <p class="text-gray-500 lg:text-sm md:text-3xl mb-4">
+              The simple and quickest way to make<br />
+              a donation
+            </p>
+            <div class="flex justify-center">
+              <a
+                href="#"
+                class="flex items-center gap-5 text-blue-700 text-2xl md:text3xl py-4 px-6 font-semibold hover:text-white hover:bg-blue-600 rounded-xl transition ease-in-out duration-500"
+              >
+                Learn more >
+              </a>
+            </div>
+          </div>
+          <div class="text-center">
+            <div class="flex justify-center mb-6">
+              <div
+                class="w-20 py-6 bg-blue-300 bg-opacity-30 text-blue-600 text-3xl rounded-xl"
+              >
+                <i class="fa-regular fa-clock"></i>
+              </div>
+            </div>
+            <h3 class="font-semibold text-xl md:text-3xl text-gray-900 mb-4">
+              Real Time
+            </h3>
+            <p class="text-gray-500 lg:text-sm md:text-3xl mb-4">
+              Reports related to donations and distribution are updated directly
+            </p>
+            <div class="flex justify-center">
+              <a
+                href="#"
+                class="flex items-center gap-5 text-blue-700 text-2xl md:text3xl py-4 px-6 font-semibold hover:text-white hover:bg-blue-600 rounded-xl transition ease-in-out duration-500"
+              >
+                Learn more >
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-white py-16">
+      <div class="container max-w-screen-xl mx-auto px-4">
+        <h1
+          class="text-center text-2xl md:text-4xl text-gray-900 font-semibold mb-16"
+        >
+          Latest to donate
+        </h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+          <div class="px-6 py-6 border-2 border-gray-300 rounded-2xl">
+            <div class="flex justify-center w-full">
+              <img
+                class="hover:opacity-75 transition ease-in-out duration-500 mb-6 w-full object-cover"
+                src="assets/img/donation-1.png"
+                alt="help flood victims"
+              />
+            </div>
+            <h4 class="font-semibold text-gray-900 text-xl md:text-3xl mb-6">
+              Help flood victims in <br />
+              Indonesia
+            </h4>
+            <p
+              class="font-light text-gray-500 text-sm md:text-md lg:text-lg mb-10"
+            >
+              Help flood victims in Indonesia by <br />
+              donating sincerely, regardless of the...
+            </p>
+            <div class="flex justify-between items-center mb-6">
+              <h5 class="text-gray-500 font-light text-sm md:text-lg">
+                Goals:
+                <span class="font-semibold text-gray-900 text-base md:text-lg"
+                  >$25000</span
+                >
+              </h5>
+              <h5 class="text-gray-500 font-light text-sm md:text-lg">
+                Raised:
+                <span class="font-semibold text-gray-900 text-base md:text-lg"
+                  >$21000</span
+                >
+              </h5>
+            </div>
+            <div
+              class="hidden md:block lg:flex items-center justify-between mb-8"
+            >
+              <div>
+                <div
+                  class="w-72 h-2 bg-slate-700 opacity-10 rounded-lg absolute"
+                ></div>
+
+                <div class="w-56 h-2 bg-blue-800 rounded-lg relative"></div>
+              </div>
+
+              <p class="font-light text-gray-900 text-md">84%</p>
+            </div>
+            <button
+              class="w-full border-2 border-transparent bg-blue-500  hover:border-blue-500 hover:bg-transparent hover:text-blue-500 transition ease-in-out duration-500 py-6 rounded-xl text-white text-lg"
+            >
+              Donate
+            </button>
+          </div>
+          <div class="px-6 py-6 border-2 border-gray-300 rounded-2xl">
+            <div class="flex justify-center w-full">
+              <img
+                class="hover:opacity-75 transition ease-in-out duration-500 mb-6 w-full object-cover"
+                src="assets/img/donation-2.png"
+                alt="help flood victims"
+              />
+            </div>
+            <h4 class="font-semibold text-gray-900 text-xl md:text-3xl mb-6">
+              Donation for COVID-19 in Indonesia
+            </h4>
+            <p
+              class="font-light text-gray-500 text-sm md:text-md lg:text-lg mb-10"
+            >
+              Donation for COVID-19 in Indonesia by <br />
+              donating sincerely, regardless of the...
+            </p>
+            <div class="flex justify-between items-center mb-6">
+              <h5 class="text-gray-500 font-light text-sm md:text-lg">
+                Goals:
+                <span class="font-semibold text-gray-900 text-base md:text-lg"
+                  >$24000</span
+                >
+              </h5>
+              <h5 class="text-gray-500 font-light text-sm md:text-lg">
+                Raised:
+                <span class="font-semibold text-gray-900 text-base md:text-lg"
+                  >$19000</span
+                >
+              </h5>
+            </div>
+            <div
+              class="hidden md:block lg:flex items-center justify-between mb-8"
+            >
+              <div>
+                <div
+                  class="w-72 h-2 bg-slate-700 opacity-10 rounded-lg absolute"
+                ></div>
+
+                <div class="w-52 h-2 bg-blue-800 rounded-lg relative"></div>
+              </div>
+
+              <p class="font-light text-gray-900 text-md">80%</p>
+            </div>
+            <button
+            class="w-full border-2 border-transparent bg-blue-500  hover:border-blue-500 hover:bg-transparent hover:text-blue-500 transition ease-in-out duration-500 py-6 rounded-xl text-white text-lg"
+            >
+              Donate
+            </button>
+          </div>
+          <div class="px-6 py-6 border-2 border-gray-300 rounded-2xl">
+            <div class="flex justify-center w-full">
+              <img
+                class="hover:opacity-75 transition ease-in-out duration-500 mb-6 w-full object-cover"
+                src="assets/img/donation-3.png"
+                alt="help flood victims"
+              />
+            </div>
+            <h4 class="font-semibold text-gray-900 text-xl md:text-3xl mb-6">
+              Help homeless cat to find <br class="lg:hidden" />
+              home
+            </h4>
+            <p
+              class="font-light text-gray-500 text-sm md:text-md lg:text-lg mb-10"
+            >
+              Help homeless cat and the oether <br />
+              animals by donating sincerely regar...
+            </p>
+            <div class="flex justify-between items-center mb-6">
+              <h5 class="text-gray-500 font-light text-sm md:text-lg">
+                Goals:
+                <span class="font-semibold text-gray-900 text-base md:text-lg"
+                  >$15000</span
+                >
+              </h5>
+              <h5 class="text-gray-500 font-light text-sm md:text-lg">
+                Raised:
+                <span class="font-semibold text-gray-900 text-base md:text-lg"
+                  >$13000</span
+                >
+              </h5>
+            </div>
+            <div
+              class="hidden md:block lg:flex items-center justify-between mb-8"
+            >
+              <div>
+                <div
+                  class="w-72 h-2 bg-slate-700 opacity-10 rounded-lg absolute"
+                ></div>
+
+                <div class="w-60 h-2 bg-blue-800 rounded-lg relative"></div>
+              </div>
+
+              <p class="font-light text-gray-900 text-md">86%</p>
+            </div>
+            <button
+            class="w-full border-2 border-transparent bg-blue-500  hover:border-blue-500 hover:bg-transparent hover:text-blue-500 transition ease-in-out duration-500 py-6 rounded-xl text-white text-lg"
+            >
+              Donate
+            </button>
+          </div>
+          <div class="px-6 py-6 border-2 border-gray-300 rounded-2xl">
+            <div class="flex justify-center w-full">
+              <img
+                class="hover:opacity-75 transition ease-in-out duration-500 mb-6 w-full object-cover"
+                src="assets/img/donation-4.png"
+                alt="help flood victims"
+              />
+            </div>
+            <h4 class="font-semibold text-gray-900 text-base md:text-3xl mb-6">
+              Help save poor children in Pakistan
+            </h4>
+            <p
+              class="font-light text-gray-500 text-sm md:text-md lg:text-lg mb-10"
+            >
+              Help save poor children in Pakistas by <br />
+              donating sincerely, regardless of the...
+            </p>
+            <div class="flex justify-between items-center mb-6">
+              <h5 class="text-gray-500 font-light text-sm md:text-lg">
+                Goals:
+                <span class="font-semibold text-gray-900 text-base md:text-lg"
+                  >$75000</span
+                >
+              </h5>
+              <h5 class="text-gray-500 font-light text-sm md:text-lg">
+                Raised:
+                <span class="font-semibold text-gray-900 text-base md:text-lg"
+                  >$50000</span
+                >
+              </h5>
+            </div>
+            <div
+              class="hidden md:block lg:flex items-center justify-between mb-8"
+            >
+              <div>
+                <div
+                  class="w-72 h-2 bg-slate-700 opacity-10 rounded-lg absolute"
+                ></div>
+
+                <div class="w-48 h-2 bg-blue-800 rounded-lg relative"></div>
+              </div>
+
+              <p class="font-light text-gray-900 text-md">66%</p>
+            </div>
+            <button
+            class="w-full border-2 border-transparent bg-blue-500  hover:border-blue-500 hover:bg-transparent hover:text-blue-500 transition ease-in-out duration-500 py-6 rounded-xl text-white text-lg"
+            >
+              Donate
+            </button>
+          </div>
+          <div class="px-6 py-6 border-2 border-gray-300 rounded-2xl">
+            <div class="flex justify-center w-full">
+              <img
+                class="hover:opacity-75 transition ease-in-out duration-500 mb-6 w-full object-cover"
+                src="assets/img/donation-5.png"
+                alt="help flood victims"
+              />
+            </div>
+            <h4 class="font-semibold text-gray-900 text-xl md:text-3xl mb-6">
+              Lifeskills for children in <br />
+              South Africa
+            </h4>
+            <p
+              class="font-light text-gray-500 text-sm md:text-md lg:text-lg mb-10"
+            >
+              Donating for children in South Africa <br />
+              by donating sincerely, regardless of...
+            </p>
+            <div class="flex justify-between items-center mb-6">
+              <h5 class="text-gray-500 font-light text-sm md:text-lg">
+                Goals:
+                <span class="font-semibold text-gray-900 text-base md:text-lg"
+                  >$45000</span
+                >
+              </h5>
+              <h5 class="text-gray-500 font-light text-sm md:text-lg">
+                Raised:
+                <span class="font-semibold text-gray-900 text-base md:text-lg"
+                  >$22500</span
+                >
+              </h5>
+            </div>
+            <div
+              class="hidden md:block lg:flex items-center justify-between mb-8"
+            >
+              <div>
+                <div
+                  class="w-72 h-2 bg-slate-700 opacity-10 rounded-lg absolute"
+                ></div>
+
+                <div class="w-40 h-2 bg-blue-800 rounded-lg relative"></div>
+              </div>
+
+              <p class="font-light text-gray-900 text-md">50%</p>
+            </div>
+            <button
+            class="w-full border-2 border-transparent bg-blue-500  hover:border-blue-500 hover:bg-transparent hover:text-blue-500 transition ease-in-out duration-500 py-6 rounded-xl text-white text-lg"
+            >
+              Donate
+            </button>
+          </div>
+          <div class="px-6 py-6 border-2 border-gray-300 rounded-2xl">
+            <div class="flex justify-center w-full">
+              <img
+                class="hover:opacity-75 transition ease-in-out duration-500 mb-6 w-full object-cover"
+                src="assets/img/donation-6.png"
+                alt="help flood victims"
+              />
+            </div>
+            <h4 class="font-semibold text-gray-900 md:text-3xl mb-6">
+              Help donate for children with cancer
+            </h4>
+            <p
+              class="font-light text-gray-500 text-sm md:text-md lg:text-lg mb-10"
+            >
+              Help donate for the children with <br/>
+              cancer by donating sincerely, regar...
+            </p>
+            <div class="flex justify-between items-center mb-6">
+              <h5 class="text-gray-500 font-light text-sm md:text-lg">
+                Goals:
+                <span class="font-semibold text-gray-900 text-base md:text-lg"
+                  >$50000</span
+                >
+              </h5>
+              <h5 class="text-gray-500 font-light text-sm md:text-lg">
+                Raised:
+                <span class="font-semibold text-gray-900 text-base md:text-lg"
+                  >$13000</span
+                >
+              </h5>
+            </div>
+            <div
+              class="hidden md:block lg:flex items-center justify-between mb-8"
+            >
+              <div>
+                <div
+                  class="w-72 h-2 bg-slate-700 opacity-10 rounded-lg absolute"
+                ></div>
+
+                <div class="w-32 h-2 bg-blue-800 rounded-lg relative"></div>
+              </div>
+
+              <p class="font-light text-gray-900 text-md">26%</p>
+            </div>
+            <button
+            class="w-full border-2 border-transparent bg-blue-500  hover:border-blue-500 hover:bg-transparent hover:text-blue-500 transition ease-in-out duration-500 py-6 rounded-xl text-white text-lg"
+            >
+              Donate
+            </button>
+          </div>
+        </div>
+        <div class="flex items-center justify-center">
+          <button
+            class="px-7 py-5 font-semibold bg-gray-100 text-gray-900 rounded-2xl hover:bg-gray-300 hover:text-gray-600 transition ease-in-out duration-500"
+          >
+            More to donate
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-white py-16">
+      <div class="container max-w-screen-xl mx-auto px-4">
+        <div class="flex flex-col lg:flex-row justify-between gap-20">
+          <div class="flex justify-center lg:justify-start w-full">
+            <img src="assets/img/feature-img.png" alt="image" />
+          </div>
+          <div class="mt-16 w-full text-center">
+            <h1 class="font-semibold text-gray-900 text-xl md:text-3xl mb-20">
+              You can help lots of people by <br />
+              donating
+            </h1>
+            <div
+              class="grid grid-cols-1 lg:grid-cols-2 md:x-space-20 mb-16 text-center lg:text-start"
+            >
+              <div class="mb-5 md:mb-0">
+                <div
+                  class="w-20 py-6 text-blue-600 bg-slate-900 bg-opacity-5 rounded-xl mb-4 mx-auto lg:mx-0"
+                >
+                  <i class="flex justify-center">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="feather feather-sun"
+                    >
+                      <circle cx="12" cy="12" r="5"></circle>
+                      <line x1="12" y1="1" x2="12" y2="3"></line>
+                      <line x1="12" y1="21" x2="12" y2="23"></line>
+                      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                      <line x1="1" y1="12" x2="3" y2="12"></line>
+                      <line x1="21" y1="12" x2="23" y2="12"></line>
+                      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                  </i>
+                </div>
+                <h3
+                  class="font-semibold text-gray-900 text-xl md:text-3xl mb-4"
+                >
+                  10000+
+                </h3>
+                <p class="font-light text-gray-400 text-md md:text-lg">
+                  Fundraising campaign in <br />
+                  all time
+                </p>
+              </div>
+
+              <div>
+                <div
+                  class="w-20 py-6 flex justify-center text-red-600 bg-slate-900 bg-opacity-5 rounded-xl mb-4 mx-auto lg:mx-0"
+                >
+                  <i>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="feather feather-award"
+                    >
+                      <circle cx="12" cy="8" r="7"></circle>
+                      <polyline
+                        points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"
+                      ></polyline>
+                    </svg>
+                  </i>
+                </div>
+                <h3
+                  class="font-semibold text-gray-900 text-xl md:text-3xl mb-4"
+                >
+                  $120M+
+                </h3>
+                <p class="font-light text-gray-400 text-md md:text-lg">
+                  Raised and counting <br />
+                  d onations in all time
+                </p>
+              </div>
+            </div>
+            <div
+              class="grid grid-cols-1 lg:grid-cols-2 md:x-space-20 mb-16 text-center lg:text-start"
+            >
+              <div class="mb-5 md:mb-0">
+                <div
+                  class="w-20 py-6 flex justify-center text-yellow-600 bg-slate-900 bg-opacity-5 rounded-xl mb-4 mx-auto lg:mx-0"
+                >
+                  <i class="fa-solid fa-user-group"></i>
+                </div>
+                <h3
+                  class="font-semibold text-gray-900 text-xl md:text-3xl mb-4"
+                >
+                  1200+
+                </h3>
+                <p class="font-light text-gray-400 text-md md:text-lg">
+                  Our volunteer around the <br />
+                  world
+                </p>
+              </div>
+
+              <div>
+                <div
+                  class="w-20 py-6 flex justify-center text-red-600 bg-slate-900 bg-opacity-5 rounded-xl mb-4 mx-auto lg:mx-0"
+                >
+                  <i class="fa-solid fa-arrow-trend-up"></i>
+                </div>
+                <h3
+                  class="font-semibold text-gray-900 text-xl md:text-3xl mb-4"
+                >
+                  98%
+                </h3>
+                <p class="font-light text-gray-400 text-md md:text-lg">
+                  Positive review from <br />
+                  public
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-white py-16">
+      <div class="container max-w-screen-xl mx-auto px-4">
+        <div
+          class="w-full h-full bg-blue-500 rounded-2xl md:rounded-3xl relative lg:flex items-center"
+        >
+          <div class="hidden lg:block">
+            <img
+              src="assets/img/humans.png"
+              alt="image"
+              class="relative z-10"
+            />
+            <img
+              src="assets/img/pattern-2.png"
+              alt="image"
+              class="absolute top-14 left-40"
+            />
+            <img
+              src="assets/img/pattern.png"
+              alt="image"
+              class="absolute top-0 z-10"
+            />
+          </div>
+          <div>
+            <h1
+              class="font-semibold py-4 text-white text-xl md:text-4xl text-center lg:text-left leading-normal md:mb-5 lg:mb-10"
+            >
+              Interested in volunteering? Join <br />
+              with us now
+            </h1>
+            <div
+              class="hidden md:block md:pb-10 items-center text-center lg:text-left space-x-5"
+            >
+              <input
+                type="text"
+                placeholder="Email"
+                class="px-4 py-4 w-96 bg-gray-50 placeholder-gray-400 rounded-xl outline-none"
+              />
+
+              <button
+                class="px-6 py-4 font-semibold bg-gray-50 text-info text-lg rounded-xl hover:bg-blue-500 hover:text-white transition ease-in-out duration-500"
+              >
+                Join
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="bg-white py-16">
+      <div class="container max-w-screen-xl mx-auto px-4">
+        <div class="flex flex-col lg:flex-row lg:justify-between">
+          <div class="space-y-7 mb-10 lg:mb-0">
+            <div class="flex justify-center lg:justify-start">
+              <img src="assets/img/footer-logo.png" alt="Image" />
+            </div>
+
+            <p
+              class="font-light text-gray-400 text-md md:text-lg text-center lg:text-left"
+            >
+              Donate and help others people <br />
+              around the world
+            </p>
+
+            <div
+              class="flex items-center justify-center lg:justify-start space-x-5"
+            >
+              <a
+                href="#"
+                class="px-3 py-3 bg-gray-200 text-gray-700 rounded-full hover:bg-info hover:text-white transition ease-in-out duration-500 text-3xl"
+              >
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+
+              <a
+                href="#"
+                class="px-3 py-3 bg-gray-200 text-gray-700 rounded-full hover:bg-info hover:text-white transition ease-in-out duration-500 text-3xl"
+              >
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+
+              <a
+                href="#"
+                class="px-3 py-3 bg-gray-200 text-gray-700 rounded-full hover:bg-info hover:text-white transition ease-in-out duration-500 text-3xl"
+              >
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="text-center lg:text-left space-y-7 mb-10 lg:mb-0">
+            <h4 class="font-semibold text-gray-900 text-lg md:text-2xl">
+              Quick links
+            </h4>
+
+            <a
+              href="#"
+              class="block font-light text-gray-400 text-sm md:text-lg hover:text-gray-800 transition ease-in-out duration-300"
+              >Charity Ratings</a
+            >
+
+            <a
+              href="#"
+              class="block font-light text-gray-400 text-sm md:text-lg hover:text-gray-800 transition ease-in-out duration-300"
+              >Top-Rated Charities</a
+            >
+
+            <a
+              href="#"
+              class="block font-light text-gray-400 text-sm md:text-lg hover:text-gray-800 transition ease-in-out duration-300"
+              >Top Compensation</a
+            >
+
+            <a
+              href="#"
+              class="block font-light text-gray-400 text-sm md:text-lg hover:text-gray-800 transition ease-in-out duration-300"
+              >High Asset Charities</a
+            >
+          </div>
+
+          <div class="text-center lg:text-left space-y-7 mb-10 lg:mb-0">
+            <h4 class="font-semibold text-gray-900 text-lg md:text-2xl">
+              Company
+            </h4>
+
+            <a
+              href="#"
+              class="block font-light text-gray-400 text-sm md:text-lg hover:text-gray-800 transition ease-in-out duration-300"
+              >About Us</a
+            >
+
+            <a
+              href="#"
+              class="block font-light text-gray-400 text-sm md:text-lg hover:text-gray-800 transition ease-in-out duration-300"
+              >Journalists / Media</a
+            >
+
+            <a
+              href="#"
+              class="block font-light text-gray-400 text-sm md:text-lg hover:text-gray-800 transition ease-in-out duration-300"
+              >Membership</a
+            >
+
+            <a
+              href="#"
+              class="block font-light text-gray-400 text-sm md:text-lg hover:text-gray-800 transition ease-in-out duration-300"
+              >Blog</a
+            >
+          </div>
+
+          <div class="text-center lg:text-left space-y-7 mb-10 lg:mb-0">
+            <h4 class="font-semibold text-gray-900 text-lg md:text-2xl">
+              Legal
+            </h4>
+
+            <a
+              href="#"
+              class="block font-light text-gray-400 text-sm md:text-lg hover:text-gray-800 transition ease-in-out duration-300"
+              >FAQ</a
+            >
+
+            <a
+              href="#"
+              class="block font-light text-gray-400 text-sm md:text-lg hover:text-gray-800 transition ease-in-out duration-300"
+              >Terms & Conditions</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,12 @@
+{
+  "name": "mercytailwind",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "dev":"npx tailwindcss -i ./assets/css/tailwind.css -o ./assets/css/output.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
