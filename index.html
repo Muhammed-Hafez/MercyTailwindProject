@@ -25,91 +25,102 @@
     <script src="assets/js/main.js" defer></script>
   </head>
   <body class="font-body">
-    <header class="bg-white py-10 md:mb-10 container max-w-screen-xl mx-auto px-6">
-      <div>
-        <img src="assets/img/navbar-logo.png" alt="Logo" />
+    <header
+      class="py-6 container max-w-screen-xl px-6 flex items-center justify-between mx-auto"
+    >
+      <div class="w-[10rem]">
+        <img
+          src="assets/img/navbar-logo.png"
+          alt="Logo"
+          class="w-full object-cover object-center"
+        />
       </div>
 
-        <nav
-          id="mobile-menu"
-          class="hidden lg:flex flex-col font-semibold lg:flex-row lg:flex-wrap lg:items-center"
-          aria-label="main"
+      <nav
+        id="mobile-menu"
+        class="hidden absolute t-0 l-0 r-0 w-full lg:static lg:flex flex-col lg:flex-row justify-between lg:flex-1 font-semibold"
+        aria-label="main"
+      >
+        <ul
+          class="p-4 lg:flex flex-col lg:flex-row lg:items-center lg:mx-auto gap-10"
         >
-        <div class="flex items-center mb-10 lg:mb-0">
-          <img src="assets/img/navbar-logo.png" alt="Logo" />
-          
-          <button
-            id="hum-button"
-            class="lg:hidden text-3xl w-10 h-10 ml-auto flex items-center justify-center border border-blue-500 text-blue-500 rounded-md"
+          <li>
+            <a
+              class="hover:text-gray-400 transition ease-in-out duration-300"
+              href="#"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              class="hover:text-gray-400 transition ease-in-out duration-300"
+              href="#"
+              >Charities</a
+            >
+          </li>
+          <li>
+            <a
+              class="hover:text-gray-400 transition ease-in-out duration-300"
+              href="#"
+              >Membership</a
+            >
+          </li>
+          <li>
+            <a
+              class="hover:text-gray-400 transition ease-in-out duration-300"
+              href="#"
+              >About us</a
+            >
+          </li>
+        </ul>
+
+        <div
+          class="py-4 flex-col text-center md:flex-col md:gap-4 lg:flex-row lg:items-center"
+        >
+          <a
+            href="#"
+            class="px-6 py-4 bg-blue-500 text-white font-semibold text-lg rounded-xl hover:bg-blue-700 transition ease-in-out duration-500 mb-5 md:mb-0"
+            >Join</a
           >
-            &#9776;
-          </button>
-        
-      </div>
-          <ul class="lg:flex flex-col lg:flex-row lg:items-center lg:mx-auto gap-8" >
-          <li>
-            <a
-            class="hover:text-gray-400 transition ease-in-out duration-300"
-            href="#"
-            >Home</a>
-          </li>
-          <li>
           <a
-            class="hover:text-gray-400 transition ease-in-out duration-300"
             href="#"
-            >Charities</a>
-          </li>
-          <li>
-          <a
-            class="hover:text-gray-400 transition ease-in-out duration-300"
-            href="#"
-            >Membership</a>
-          </li>
-          <li>
-          <a
-            class="hover:text-gray-400 transition ease-in-out duration-300"
-            href="#"
-            >About us</a>
-          </li>
-          </ul>
-          <div class="py-4 flex flex-col text-center md:flex-col md:gap-4 lg:flex-row lg:items-center">
-            <a
-              href="#"
-              class="px-6 py-4 bg-blue-500 text-white font-semibold text-lg rounded-xl hover:bg-blue-700 transition ease-in-out duration-500 mb-5 md:mb-0"
-              >Join</a>
-            <a
-              href="#"
-              class="px-6 py-4 border-2 border-blue-500 text-blue-500 font-semibold text-lg rounded-xl hover:bg-blue-700 hover:text-white transition ease-linear duration-500"
-              >Become a member</a>
-          </div>
+            class="px-6 py-4 border-2 border-blue-500 text-blue-500 font-semibold text-lg rounded-xl hover:bg-blue-700 hover:text-white transition ease-linear duration-500"
+            >Become a member</a
+          >
         </div>
-        </nav>
-      
+      </nav>
+
+      <button
+        id="hum-button"
+        class="lg:hidden text-3xl w-10 h-10 ml-auto flex items-center justify-center border border-blue-500 text-blue-500 rounded-md"
+      >
+        &#9776;
+      </button>
     </header>
-      <section class="">
-        <div class="flex flex-col lg:flex-row justify-between space-x-20">
-          <div class="text-center lg:text-left mt-40">
-            <h1 class="text-3xl font-semibold md:text-6xl leading-normal mb-6">
-              Charity for the <br class="hidden lg:block" />
-              world better life
-            </h1>
-            <p
-              class="text-gray-400 font-light text-base md:text-lg leading-normal mb-12"
-            >
-              We provide a trusted donation channel for peoples of<br />
-              worldwide to support people and organizers
-            </p>
-            <button
-              class="text-lg text-gray-300 lg:bg-blue-700 font-semibold hover:bg-blue-700 px-4 py-6 rounded-xl transition ease-in-out duration-500"
-            >
-              Get Started
-            </button>
-          </div>
-          <div class="mt-12">
-            <img src="assets/img/home-img.png" alt="Image" />
-          </div>
+    <section class="">
+      <div class="flex flex-col lg:flex-row justify-between space-x-20">
+        <div class="text-center lg:text-left mt-40">
+          <h1 class="text-3xl font-semibold md:text-6xl leading-normal mb-6">
+            Charity for the <br class="hidden lg:block" />
+            world better life
+          </h1>
+          <p
+            class="text-gray-400 font-light text-base md:text-lg leading-normal mb-12"
+          >
+            We provide a trusted donation channel for peoples of<br />
+            worldwide to support people and organizers
+          </p>
+          <button
+            class="text-lg text-gray-300 lg:bg-blue-700 font-semibold hover:bg-blue-700 px-4 py-6 rounded-xl transition ease-in-out duration-500"
+          >
+            Get Started
+          </button>
         </div>
-      </section>
+        <div class="mt-12">
+          <img src="assets/img/home-img.png" alt="Image" />
+        </div>
+      </div>
+    </section>
 
     <section class="bg-white py-16 md:mt-10">
       <div class="container max-w-screen-xl mx-auto px-4">
@@ -252,7 +263,7 @@
               <p class="font-light text-gray-900 text-md">84%</p>
             </div>
             <button
-              class="w-full border-2 border-transparent bg-blue-500  hover:border-blue-500 hover:bg-transparent hover:text-blue-500 transition ease-in-out duration-500 py-6 rounded-xl text-white text-lg"
+              class="w-full border-2 border-transparent bg-blue-500 hover:border-blue-500 hover:bg-transparent hover:text-blue-500 transition ease-in-out duration-500 py-6 rounded-xl text-white text-lg"
             >
               Donate
             </button>
@@ -302,7 +313,7 @@
               <p class="font-light text-gray-900 text-md">80%</p>
             </div>
             <button
-            class="w-full border-2 border-transparent bg-blue-500  hover:border-blue-500 hover:bg-transparent hover:text-blue-500 transition ease-in-out duration-500 py-6 rounded-xl text-white text-lg"
+              class="w-full border-2 border-transparent bg-blue-500 hover:border-blue-500 hover:bg-transparent hover:text-blue-500 transition ease-in-out duration-500 py-6 rounded-xl text-white text-lg"
             >
               Donate
             </button>
@@ -353,7 +364,7 @@
               <p class="font-light text-gray-900 text-md">86%</p>
             </div>
             <button
-            class="w-full border-2 border-transparent bg-blue-500  hover:border-blue-500 hover:bg-transparent hover:text-blue-500 transition ease-in-out duration-500 py-6 rounded-xl text-white text-lg"
+              class="w-full border-2 border-transparent bg-blue-500 hover:border-blue-500 hover:bg-transparent hover:text-blue-500 transition ease-in-out duration-500 py-6 rounded-xl text-white text-lg"
             >
               Donate
             </button>
@@ -403,7 +414,7 @@
               <p class="font-light text-gray-900 text-md">66%</p>
             </div>
             <button
-            class="w-full border-2 border-transparent bg-blue-500  hover:border-blue-500 hover:bg-transparent hover:text-blue-500 transition ease-in-out duration-500 py-6 rounded-xl text-white text-lg"
+              class="w-full border-2 border-transparent bg-blue-500 hover:border-blue-500 hover:bg-transparent hover:text-blue-500 transition ease-in-out duration-500 py-6 rounded-xl text-white text-lg"
             >
               Donate
             </button>
@@ -454,7 +465,7 @@
               <p class="font-light text-gray-900 text-md">50%</p>
             </div>
             <button
-            class="w-full border-2 border-transparent bg-blue-500  hover:border-blue-500 hover:bg-transparent hover:text-blue-500 transition ease-in-out duration-500 py-6 rounded-xl text-white text-lg"
+              class="w-full border-2 border-transparent bg-blue-500 hover:border-blue-500 hover:bg-transparent hover:text-blue-500 transition ease-in-out duration-500 py-6 rounded-xl text-white text-lg"
             >
               Donate
             </button>
@@ -473,7 +484,7 @@
             <p
               class="font-light text-gray-500 text-sm md:text-md lg:text-lg mb-10"
             >
-              Help donate for the children with <br/>
+              Help donate for the children with <br />
               cancer by donating sincerely, regar...
             </p>
             <div class="flex justify-between items-center mb-6">
@@ -504,7 +515,7 @@
               <p class="font-light text-gray-900 text-md">26%</p>
             </div>
             <button
-            class="w-full border-2 border-transparent bg-blue-500  hover:border-blue-500 hover:bg-transparent hover:text-blue-500 transition ease-in-out duration-500 py-6 rounded-xl text-white text-lg"
+              class="w-full border-2 border-transparent bg-blue-500 hover:border-blue-500 hover:bg-transparent hover:text-blue-500 transition ease-in-out duration-500 py-6 rounded-xl text-white text-lg"
             >
               Donate
             </button>
